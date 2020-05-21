@@ -62,6 +62,6 @@ class Transmit:
 
 
 if __name__ == "__main__":
-    streamer = Transmit()
-    streamer.set(port=61001)
-    streamer.send({"foo": "bar"})
+    transmit = Transmit()
+    transmit.set(port=61001)
+    transmit.send({"foo": "bar"})
