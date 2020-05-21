@@ -143,8 +143,8 @@ if __name__ == "__main__":
     import queue as qu
 
     q = qu.Queue()
-    rx = Receive(q, port=61001)
-    rx.start()
+    receive = Receive(q, port=61001)
+    receive.start()
     try:
         while True:
             try:
@@ -156,4 +156,4 @@ if __name__ == "__main__":
                     print(msg)
 
     except KeyboardInterrupt:
-        rx.stop()
+        receive.stop()
